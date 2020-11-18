@@ -30,9 +30,195 @@ ul.topnav li.right {float: right;}
 }
 
 /* Style the header */
-.header {
+.header  {
   background-color: #90EE90;
-  padding: 1px;
+  height: 100px;
   text-align: center;
   font-size: 30px;
+  padding: 1;
 }
+
+.header img {
+  float: left;
+  width: 100px;
+  height: 100px;
+  box-align: top;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+  font-weight: bolder;
+  font-size: 20px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+input[type=submit] {
+  background-color: #006400;
+  color: white;
+  padding: 12px 20px;
+  width: 200px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  float:right;
+}
+
+.results{
+  border: rgb(17, 17, 17);
+  border-width: thick;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9000;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  opacity: 0.3;
+}
+
+.slider {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 15px;
+  border-radius: 5px;  
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%; 
+  background: rgb(175, 76, 76);
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: rgb(175, 76, 81);
+  cursor: pointer;
+}
+
+hr {
+  border: 3px dotted green;
+  border-radius: 5px;
+}
+
+/* Style the header */
+.footer  {
+  border: 3px dotted ;
+  background-color:rgb(73, 128, 0);
+  height: 100px;
+  text-align: center;
+  font-size: 30px;
+  padding: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Container for flexboxes */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
+/*
+
+.header h2 {
+  position: relative;
+  background-color: #90EE90;
+  top: 18px;
+  left: 10px;
+  font-size: 30px;
+  height: 100px;
+  padding: 1px;
+}
+
+*/
