@@ -12,13 +12,14 @@ ul.topnav li {float: left;}
 
 ul.topnav li a {
   display: block;
-  color: white;
+  color: #111;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
+ul.topnav li a:hover:not(.active) {background-color: rgb(247, 240, 240);}
 
 ul.topnav li a.active {background-color: #006400;}
 
@@ -38,13 +39,7 @@ ul.topnav li.right {float: right;}
   padding: 1;
 }
 
-.header img {
-  float: left;
-  width: 100px;
-  height: 100px;
-  box-align: top;
 
-}
 
 * {
   box-sizing: border-box;
@@ -70,11 +65,12 @@ input[type=submit] {
   background-color: #006400;
   color: white;
   padding: 12px 20px;
-  width: 200px;
+  width: 100px;
+  height: 30px;
   border: none;
   border-radius: 4px;
   cursor: pointer;
-  float: right;
+  float: center;
 }
 
 
@@ -154,7 +150,7 @@ button {
   width: 25px;
   height: 25px;
   border-radius: 50%; 
-  background: rgb(175, 76, 76);
+  background: rgba(250, 2, 2, 0.979);
   cursor: pointer;
 }
 
@@ -162,7 +158,7 @@ button {
   width: 25px;
   height: 25px;
   border-radius: 50%;
-  background: rgb(175, 76, 81);
+  background: rgb(240, 234, 235);
   cursor: pointer;
 }
 
@@ -174,11 +170,11 @@ hr {
 /* Style the header */
 .footer  {
   border: 3px dotted ;
-  background-color:rgb(73, 128, 0);
+  background-color:rgb(142, 250, 165);
   height: 100px;
   text-align: center;
   font-size: 30px;
-  padding: 1;
+  padding: 10px;
 }
 * {
   box-sizing: border-box;
@@ -192,14 +188,14 @@ hr {
 
 /* Create four equal columns */
 .column {
-  flex: 25%;
-  padding: 20px;
+  flex: 33%;
+  padding: 10px;
 }
 
 /* On screens that are 992px wide or less, go from four columns to two columns */
 @media screen and (max-width: 992px) {
   .column {
-    flex: 50%;
+    flex: 30%;
   }
 }
 
@@ -208,7 +204,39 @@ hr {
   .row {
     flex-direction: column;
   }
+}*/
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
 }
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: dodgerblue;
+  color: white;
+}
+
+.header-right {
+  float: right;
+}
+
+
 /*
 
 .header h2 {
