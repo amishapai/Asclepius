@@ -6,11 +6,11 @@ google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var bdata = google.visualization.arrayToDataTable([
     ['Age Group', 'Rf Low', 'Rf Meduim', 'Rf High'],
-    ['0-15', 30, 80,17],
-    ['16-25', 30, 23,11],
-    ['26-40', 10, 20,27],
-    ['41-65', 3, 80,91],
-    ['>65', 30, 80,170]
+    ['0-15', 300, 200,0],
+    ['16-25', 350, 300,110],
+    ['26-40', 500, 750,780],
+    ['41-65', 30, 800,910],
+    ['>65', 300, 800,1700]
   ]);
 
   var boptions = {

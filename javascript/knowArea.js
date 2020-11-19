@@ -6,15 +6,15 @@
     //first pie chart
     var data = google.visualization.arrayToDataTable([
       ['Age Group', 'Fatality'],
-      ['0-15',  11],
-      ['16-25',  2],
-      ['26-40',  2],
-      ['41-65', 2],
-      ['>65',    7]
+      ['0-15',  2],
+      ['16-25', 6],
+      ['26-40', 7],
+      ['41-65',8],
+      ['>65',    12]
     ]);
 
     var options = {
-      title: 'Age wise Fatality rate'
+      title: 'Fatality rate/Age groups'
     };
     //alert("here in first done ");
 
@@ -25,8 +25,8 @@
     //Second pie chart to be displayed
     var data1 = google.visualization.arrayToDataTable([
       ['Impacted', 'Not impacted'],
-      ['Covid', 20],
-      ['No Covid', 80]
+      ['Covid', 35],
+      ['No Covid', 65]
     ]);
   
     var options1 = {
@@ -40,11 +40,11 @@
     
   
     var ldata = google.visualization.arrayToDataTable([
-          ['Day', 'Infected', 'Reported', 'Population'],
-          ['0-20',  1000,      400,            2000],
-          ['21-40',  1170,      460,           2000],
-          ['41-60',  660,       1120,          2000],
-          ['>60',  1030,      540,             2000]
+          ['Day', 'Infected', 'Reported' ],
+          ['0-50',  1000,       958],
+          ['51-100',  2000,     1998],
+          ['101-200',  3500,    3000],
+          ['>200',  4240,      3500]
         ]);
 
         var loptions = {
