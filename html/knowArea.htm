@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" href="../stylesheets/mystyle.css">
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript" src="../javascript/knowArea.js"></script>
+<script type="text/javascript" src="../javascript/barChart.js"></script>
+
+<body>
+
+<ul class="topnav">
+  <li><a href="home.htm">Home</a></li>
+  <li><a  href="RiskAssess.htm">Patient Risk Assessment</a></li>
+  <li><a class="active" href="knowArea.htm">Area Risk Assessment</a></li>
+  <li><a href="LocalityRF.htm">Locality Prediction</a></li> 
+</ul>
+
+  <div class="header">
+    <h2>
+      <img src="../images/AscLogo.jpeg" alt="Asclepius" padding=0 width=50 height="50" text-align="left"/>   
+  Asclepius
+  </h2>
+  </div>
+  <body>
+    <p style="text-align:center">  Select your Area xloc and yloc:
+        <input id="xloc" type="number" value="3" min="1" max="20">
+        <input id="yloc" type="number" value="2" min="1" max="20">     
+        <input type="submit" style="text-align: center; float:center;"  id="rfsubmit"  onclick="rfactor();"> 
+    </p>
+    <div class="row">
+      <div class="column" style="background-color:#EAFAF1;">
+        <div id="curve_chart" style="width: 700px; height: 500px"></div>
+      </div>
+      
+      <div class="column" style="background-color:#EAFAF1;">
+        <div id="Agepiechart" style="width: 700px; height: 500px;"></div>
+      </div>
+      
+      <div class="column" style="background-color:#EAFAF1;">
+        <div id="RFpiechart" style="width: 700px; height: 500px;"></div>
+      </div>
+
+      <div class="column" style="background-color:#EAFAF1;">
+        <div id="chart_div" style="width: 700px; height: 500px;"></div>
+        </div>
+    </div>
+  </body>
+  <!--
+  <h1>Responsive Topnav Example</h1>
+  <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+  <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+  <h4>Resize the browser window to see the effect.</h4>
+</div>
+-->
+</head>
+</html>

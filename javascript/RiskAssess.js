@@ -78,6 +78,11 @@
        {
            rf=10;
        }
+
+       if (rf<1)
+       {
+           rf=1;
+       }
       
        document.getElementById("rffor").innerHTML = pname +", your Risk Factor is " + rf
         document.getElementById("results").style.display="inline";

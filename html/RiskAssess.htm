@@ -1,0 +1,105 @@
+<html>
+<head>
+<link rel="stylesheet" href="../stylesheets/mystyle.css">
+<script src="../javascript/RiskAssess.js"></script>
+
+<body>
+<!-- Header Menu -->
+<ul class="topnav">
+  <li><a href="home.htm">Home</a></li>
+  <li><a  class="active" href="RiskAssess.htm">Patient Risk Assessment</a></li>
+  <li><a href="knowArea.htm">Area Risk Assessment</a></li>
+  <li><a href="LocalityRF.htm">Locality Prediction</a></li>
+</ul>
+
+
+  <div class="header">
+    <h2>
+      <img src="../images/AscLogo.jpeg" alt="Asclepius" padding=0 width=50 height="50" text-align="left"/>   
+  Asclepius
+  </h2>
+  </div>
+  <body>
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-25">
+        <label for="fname">First name:</label>
+      </div>
+      <div class="col-75">
+        <input type="text" id="fname" name="fname" required>
+      </div>
+    </div>
+    <div class="row">
+   <div class="col-25">
+        <label for="agedisplay">Age:</label>
+      </div>
+      <div class="col-75">
+        <input type="number" id="ageNo" name="ageNo" min="1" max="130" required>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="sdate">Infection Start Date:</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="sdate" name="sdate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="rdate">Reported on:</label>
+      </div>
+      <div class="col-75">
+        <input type="date" id="rdate" name="rdate">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="xloc">X location:</label>
+      </div>
+      <div class="col-75"> 
+        <input id="xloc" type="number" min="1" max="20">
+      </div>
+      </div>
+      <div class="row">
+        <div class="col-25">
+        <label for="yloc">Y location:</label>
+      </div>
+      <div class="col-75">  
+        <input type="number" id="yloc" name="yloc" min=1 max=20>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-25">
+        <label for="yloc">Health Issues</label><br/>
+      </div>
+      <div class="col-75">  
+        <input type="checkbox" id="illness1" name="illness1" value="1">
+          <label for="illness1"> Diabetes</label><br>
+          <input type="checkbox" id="illness2" name="illness2" value="1">
+          <label for="illness2"> Respiratory Problems</label><br>
+          <input type="checkbox" id="illness3" name="illness3" value="1">
+          <label for="illness3"> Abnormal Blood Pressure</label>
+        </div>
+     <div class="row">      
+      <button  id="rfsubmit"  onclick="rfactor();"> Calculate Risk Factor</button>
+    </div>
+    </div>
+   
+    <div id="results"  style="display: none;"> 
+      <p></p>
+      <div class="footer">
+      <label id="rffor" for="vol">Your Risk Factor in a scale of 1 - 10 is :</label>
+    <!--<input type="range" id="rf" name="rf" min="0" max="5" value=3 disabled>-->
+    
+    <div class="slidecontainer">
+      <input type="range" min="1" max="10" class="slider" id="myRange" disabled>
+    </div>
+   
+  </div>
+    </div>
+    
+</body>
+</head>
+</html>
